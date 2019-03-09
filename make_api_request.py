@@ -8,11 +8,13 @@
 import requests
 import pandas as pd
 
+cacert = "certificate.pem" 
+
 def make_api_request(data):
     # url for api
-    url = 'https://127.0.0.1:5000/api'
+    url = 'https://localhost:3200/api'
     # make post request
-    r = requests.post( url,pd.DataFrame(data).to_json() )
+    r = requests.post( url,pd.DataFrame(data).to_json(), verify=cacert )
     print r.text
     return r.text
     
