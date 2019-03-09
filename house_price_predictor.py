@@ -24,7 +24,7 @@ SqFeet = [ 1400, 1600, 1700, 1875, 1100, 1550, 2350, 2450, 1425, 1700 ]
 Prices = [ 245000, 312000, 279000, 308000, 199000, 219000, 405000, 324000, 319000, 255000 ]
 
 CV = 10
-PARENT_DIR      = "C:\\Users\\admin\\Desktop\\GfK\\HousePricePrediction"
+PARENT_DIR      = ""
 MODEL_NAME      = "reg_model.pkl"
 
 def read_data( data, columnNames, sep=";" ):
