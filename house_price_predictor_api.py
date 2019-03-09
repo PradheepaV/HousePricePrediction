@@ -35,19 +35,12 @@ def make_prediction():
     df_response = pd.DataFrame( {'SqFeet': df[ 'SqFeet' ].ravel(), 'PredictedHousePrice' : predictions.ravel() } )
     return df_response.to_json()
 
-''' 
-# WSGIServer failed during run on my laptop due to SSLError bad handshake
-server = WSGIServer(bind_addr=("https://127.0.0.1", 5000 ), wsgi_app=app, numthreads=100)
-addr = '127.0.0.1', 8020
-try:    
-    WSGIServer(addr, app).start()
-except KeyboardInterrupt:
-    server.stop()
-'''
+@app.route( '/ping', methods=[ 'GET' ])
+def test_ping():
+    ''' test server https://localhost:3200/api '''
+    return "alive"
+
 if __name__ == '__main__':
-    # host flask app at port 5000
-    #app.run(port=5000, debug=True)
-    app.run( ssl_context='adhoc')
-
-
+    # host flask app at port 5200
+    app.run(host = '127.0.0.1', port = 5200, ssl_context=('certificate.pem', 'key.pem'))
 
