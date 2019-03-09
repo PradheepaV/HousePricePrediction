@@ -1,7 +1,7 @@
 Model Performance stats
 =========================
 ![Screenshot](HousePricePredictorPerf.png)
-![Screenshot](HousePricePredictorPerf2.png)
+![Screenshot](HousePriceLinReg.png)
 
 Accuracy Stats
 ===============
