@@ -11,7 +11,6 @@ import numpy as np
 import json
 import pickle
 import os
-from cheroot.wsgi import Server as WSGIServer
 
 from house_price_predictor import PARENT_DIR, MODEL_NAME
 
