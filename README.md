@@ -1,5 +1,6 @@
 House Price Prediction Model Performance Stats
 =========================
+(Accuracy on Y axis)
 ![Screenshot](HousePricePredictorPerf.png)
 
 Model Analysis in Excel
