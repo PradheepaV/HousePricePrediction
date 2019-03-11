@@ -1,6 +1,9 @@
-Model Performance stats
+House Price Prediction Model Performance Stats
 =========================
 ![Screenshot](HousePricePredictorPerf.png)
+
+Model Analysis in Excel
+=======================
 ![Screenshot](HousePriceLinReg.png)
 
 Accuracy Stats
